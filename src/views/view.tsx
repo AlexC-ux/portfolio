@@ -84,7 +84,7 @@ function ReactComponent() {
             />
 
 
-            <Card theme="green" time={new Date("04 25 2022")} tag1=<div>PHP + CMS Joomla</div> link="//github.com/AlexC-ux/EncryShare-Java" linkText="Открыть репозиторий" title="Мессенджер EncryShare" imageLink="./images/products/encryshare.png"
+            <Card theme="green" time={new Date("04 25 2022")} tag1=<div>PHP + Java</div> link="//github.com/AlexC-ux/EncryShare-Java" linkText="Открыть репозиторий" title="Мессенджер EncryShare" imageLink="./images/products/encryshare.png"
                 text=<div>Сайт, разработанный для образовательной организации "Московский колледж транспорта".
                     <br />Стэк: <code>Java</code>, <code>PHP</code>.
                     <br />Мобильное приложение написано на Java, из функционала: регистрация в приложении, шифрование сообщений, создание групповых чатов. API написан на PHP.</div>
