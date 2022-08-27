@@ -38,43 +38,36 @@ function ReactComponent() {
                 <div className="col contactIcon">
                     <div className="imageContainer" style={{ height: "120px", width: "120px" }}>
                         <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" style={{ width: "100%", height: "100%" }} />
-                        {/*<i className="arrowBottomPos bi bi-arrow-down-right-square"></i>*/}
                     </div>
                 </div>
                 <div className="col contactIcon">
                     <div className="imageContainer" style={{ height: "120px", width: "120px", backgroundImage: "url('')" }}>
                         <img src="https://zevensource.com/resource/img/shared/logo/tools/cs.svg" style={{ width: "100%", height: "100%" }} />
-                        {/*<i className="arrowBottomPos bi bi-arrow-down-right-square"></i>*/}
                     </div>
                 </div>
                 <div className="col contactIcon">
                     <div className="imageContainer" style={{ height: "120px", width: "120px", backgroundImage: "url('')" }}>
                         <img src="https://uploads-ssl.webflow.com/62038ffc9cd2db4558e3c7b7/6242ba88faee5ceb27b7d9bf_php.svg" style={{ width: "100%", height: "100%" }} />
-                        {/*<i className="arrowBottomPos bi bi-arrow-down-right-square"></i>*/}
                     </div>
                 </div>
                 <div className="col contactIcon">
                     <div className="imageContainer" style={{ height: "133px", width: "120px", backgroundImage: "url('')" }}>
                         <img src="https://web-creator.ru/uploads/Page/22/nodejs.svg" style={{ width: "100%", height: "100%" }} />
-                        {/*<i className="arrowBottomPos bi bi-arrow-down-right-square"></i>*/}
                     </div>
                 </div>
                 <div className="col contactIcon">
                     <div className="imageContainer" style={{ height: "120px", width: "120px", backgroundImage: "url('')" }}>
                         <img src="https://4ireacademy.com/wp-content/uploads/2021/08/javascript.svg" style={{ width: "100%", height: "100%" }} />
-                        {/*<i className="arrowBottomPos bi bi-arrow-down-right-square"></i>*/}
                     </div>
                 </div>
                 <div className="col contactIcon">
                     <div className="imageContainer" style={{ height: "120px", width: "120px", backgroundImage: "url('')" }}>
                         <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" style={{ width: "100%", height: "100%" }} />
-                        {/*<i className="arrowBottomPos bi bi-arrow-down-right-square"></i>*/}
                     </div>
                 </div>
                 <div className="col contactIcon">
                     <div className="imageContainer" style={{ height: "120px", width: "120px", backgroundImage: "url('')" }}>
                         <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" style={{ width: "100%", height: "100%" }} />
-                        {/*<i className="arrowBottomPos bi bi-arrow-down-right-square"></i>*/}
                     </div>
                 </div>
             </div>
