@@ -11,7 +11,7 @@ root.render(
     <BrowserRouter>
         <div className="">
                         <Routes>
-                <Route path="/portfolio/" element={<View />} />                                               { /*   Главная страница                                                 */}
+                <Route path="/portfolio/build/" element={<View />} />                                               { /*   Главная страница                                                 */}
             </Routes>
             </div>
     </BrowserRouter >
