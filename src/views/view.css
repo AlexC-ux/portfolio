@@ -1,0 +1,22 @@
+.contactIcon {
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.arrowBottomPos {
+    top: 68%;
+    position: relative;
+    font-size: 30px;
+    left: 73%;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.contactIcon > div:hover > .arrowBottomPos {
+    color: #6348d2;
+    transition: 0.3s
+}
+
