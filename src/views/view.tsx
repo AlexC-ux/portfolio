@@ -25,7 +25,7 @@ function ReactComponent() {
                     <a href="https://github.com/AlexC-ux"><i className="bi bi-github contactIcon"></i></a>
                 </div>
                 <div className="col">
-                    <a href="mailto:eunv2004@gmail.com"> <i className="bi bi-envelope contactIcon"></i></a>
+                    <a href="mailto:eunv2004@gmail.com"><i className="bi bi-envelope contactIcon"></i></a>
                 </div>
             </div>
         </div>
