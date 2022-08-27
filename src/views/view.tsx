@@ -19,13 +19,13 @@ function ReactComponent() {
 
             <div className="row  mt-2 g-0 justify-content-end text-light" style={{ paddingTop: `2%`, bottom: "0px", fontSize: "50px" }}>
                 <div className="col">
-                    <i className="bi bi-phone contactIcon"></i>
+                    <a href="tel:+79955071469"><i className="bi bi-phone contactIcon"></i></a>
                 </div>
                 <div className="col">
-                    <i className="bi bi-github contactIcon"></i>
+                    <a href="https://github.com/AlexC-ux"><i className="bi bi-github contactIcon"></i></a>
                 </div>
                 <div className="col">
-                    <i className="bi bi-envelope contactIcon"></i>
+                    <a href="mailto:eunv2004@gmail.com"> <i className="bi bi-envelope contactIcon"></i></a>
                 </div>
             </div>
         </div>
@@ -97,7 +97,7 @@ function ReactComponent() {
                     <br />С нуля разработанный backend и frontend, личный кабинет, квизы и конкурсы.</div>
             />
 
-            
+
 
             <Card theme="green" time={new Date("04 25 2022")} tag1=<div>PHP + CMS Joomla</div> link="//github.com/AlexC-ux/EncryShare-Java" linkText="Открыть репозиторий" title="Мессенджер EncryShare" imageLink="./images/products/encryshare.png"
                 text=<div>Сайт, разработанный для образовательной организации "Московский колледж транспорта".
@@ -111,7 +111,7 @@ function ReactComponent() {
                     <br />Основная часть на базе CMS Joomla, доработанный функционал на php, внедрение и кастомизация шаблона под требования заказчика, вёрстка страниц, оптимизация до 85 баллов по GooglePageSpeed, оптимизация мобильной версии сайта.               </div>
             />
 
-            
+
 
         </div>
     </>
