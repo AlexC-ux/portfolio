@@ -84,13 +84,6 @@ function ReactComponent() {
         <div className="container bg-dark text-light mt-5">
             <h2 className="text-center border-bottom my-2 pb-2 mx-auto" style={{ maxWidth: "250px" }}>Проекты</h2>
 
-            <Card theme="red" time={new Date("08 27 2022")} link="//github.com/AlexC-ux" linkText="Открыть GitHub" title="Портфолио" imageLink="./images/products/activemkt.png"
-                text=<div>Сайт, разработанный как инициатива студенческого активма Московского колледжа транспорта.
-                    <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>, <code>HTML5</code>, <code>CSS</code>.
-                    <br />С нуля разработанный backend и frontend, личный кабинет, квизы и конкурсы.</div>
-            />
-
-
             <Card theme="red" time={new Date("08 19 2022")} tag1=<div>TSX + Node.Js</div> tag2=<a href="https://web.archive.org/web/20220827154459/https://xn--80aerhcl3be.xn--p1ai/"><i className="bi bi-box-arrow-up-right mx-2"></i>WebArchive</a> link="//активмкт.рф" linkText="Открыть сайт" title="Сайт студентческого актива МКТ" imageLink="./images/products/activemkt.png"
                 text=<div>Сайт, разработанный как инициатива студенческого активма Московского колледжа транспорта.
                     <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>, <code>HTML5</code>, <code>CSS</code>.
