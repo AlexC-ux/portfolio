@@ -131,7 +131,7 @@ function ReactComponent() {
             <Card theme="yellow" time={new Date("03 20 2022")} tag1=<div>С# + PHP</div> link="//github.com/AlexC-ux/EncryShare" linkText="Открыть репозиторий" title="Десктоп приложение EncryShare" imageLink="./images/products/encryshare.png"
                 text=<div>Клиент-сервер на C# для передачи сообщений и файлов в зашифрованном виде, прямое подключение по IP.
                     <br />Стэк: <code>С#1</code>, <code>PHP</code>.
-                    <br />Мобильное приложение написано на Java, из функционала: регистрация в приложении, шифрование сообщений, создание групповых чатов. API написан на PHP.</div>
+                    <br />Приложение может выступать как сервером, так и клиентом, соединение происходит по протоколу tcp от клиента к серверу напрямую. Реализовано шифрование всех передаваемых данных и передача файлов и текста.</div>
             />
 
             <Card theme="blue" time={new Date("01 31 2022")} tag1=<div>PHP + CMS Joomla</div> tag2=<a href="//web.archive.org/web/20220322150522/http://mkgt.ru/"><i className="bi bi-box-arrow-up-right mx-2"></i>WebArchive</a> link="//mkgt.ru" linkText="Открыть сайт" title="Сайт Московского колледжа транспорта" imageLink="./images/products/mkgt.png"
