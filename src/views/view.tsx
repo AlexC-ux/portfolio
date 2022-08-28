@@ -9,7 +9,7 @@ function ReactComponent() {
 
     let phoneRef = React.createRef < HTMLImageElement>();
     let mailRef = React.createRef < HTMLImageElement>();
-
+    let photoRef= React.createRef < HTMLDivElement>();
 
     const copyToClipboard = (str: string) => {
         if (navigator && navigator.clipboard && navigator.clipboard.writeText)
@@ -33,7 +33,13 @@ function ReactComponent() {
     return (<>
 
         <div className="w-100 bg-dark titlecontainer text-light" style={{ height: `${document.documentElement.clientHeight}px` }}>
-            <div className="row g-0 justify-content-center" style={{ paddingTop: `${(document.documentElement.clientHeight / 100 * 60)}px`, bottom: "0px" }}>
+            <div className="row">
+                <div className="col-8 d-block mx-auto" ref={photoRef}>
+                    <img src="https://i.ibb.co/82qQMdQ/Image.png" className="d-block mx-auto rounded border" style={{ height: "440px", width: "340px", marginTop:"30px" }} />
+            </div>
+            </div>
+            <div className="row g-0 justify-content-center" style={{ paddingTop: `${(document.documentElement.clientHeight / 100 * 15)}px`, bottom: "0px" }}>
+                
                 <div className="col text-center fs-1">
                     <h1>Герасимов Александр Андреевич</h1>
                 </div>
