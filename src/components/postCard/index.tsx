@@ -7,8 +7,8 @@ function ReactComponent(props: { theme: "blue"|"red"|"green" , time: Date, tag1?
 			<a className="postcard__img_link" href={props.link}>
 			  <img className="postcard__img" src={props.imageLink} alt="Image Title" />
 		  </a>
-		  <div className="postcard__text">
-			  <h1 className="postcard__title blue"><a href="#">{props.title}</a></h1>
+			<div className="postcard__text">
+				<h1 className="postcard__title blue"><a href={props.link}>{props.title}</a></h1>
 			  <div className="postcard__subtitle small">
 
 				  <time dateTime={props.time.toUTCString()}>

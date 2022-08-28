@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { SetStateAction, useState } from 'react';
 import "./view.css";
 import Card from "../components/postCard";
 
@@ -6,7 +6,32 @@ function ReactComponent() {
 
     document.body.classList.add("bg-dark")
 
+
+    let phoneRef = React.createRef < HTMLImageElement>();
+    let mailRef = React.createRef < HTMLImageElement>();
+
+
+    const copyToClipboard = (str: string) => {
+        if (navigator && navigator.clipboard && navigator.clipboard.writeText)
+            return navigator.clipboard.writeText(str);
+        return Promise.reject('The Clipboard API is not available.');
+    };
+
+    class ClickAgain{
+        private element;
+        private timeout;
+        constructor(element: any, timeout: number) {
+            this.element = element;
+            this.timeout = timeout;
+        }
+
+        public click() {
+            setTimeout(() => { this.element.click(); console.log(1) }, this.timeout)
+        }
+    }
+
     return (<>
+
         <div className="w-100 bg-dark titlecontainer text-light" style={{ height: `${document.documentElement.clientHeight}px` }}>
             <div className="row g-0 justify-content-center" style={{ paddingTop: `${(document.documentElement.clientHeight / 100 * 60)}px`, bottom: "0px" }}>
                 <div className="col text-center fs-1">
@@ -19,13 +44,22 @@ function ReactComponent() {
 
             <div className="row  mt-2 g-0 justify-content-end text-light" style={{ paddingTop: `2%`, bottom: "0px", fontSize: "50px" }}>
                 <div className="col">
-                    <a href="tel:+79955071469"><i className="bi bi-phone contactIcon"></i></a>
+                    <div onClick={(event) => {
+                        if (!phoneRef.current!.getAttribute("aria-describedby")) {
+                            setTimeout(() => { phoneRef.current!.click(); }, 2000);
+                        } copyToClipboard("+79955071469");  }}><i ref={phoneRef} className="bi bi-phone contactIcon" data-bs-custom-class="green-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-trigger="focus click" data-bs-title="Номер телефона скопирован!"></i>
+                        
+                        </div>
                 </div>
                 <div className="col">
-                    <a href="https://github.com/AlexC-ux"><i className="bi bi-github contactIcon"></i></a>
+                    <a href="https://github.com/AlexC-ux"><i className="bi bi-github text-light contactIcon"></i></a>
                 </div>
                 <div className="col">
-                    <a href="mailto:eunv2004@gmail.com"><i className="bi bi-envelope contactIcon"></i></a>
+                    <div onClick={(event) => {
+                        if (!mailRef.current!.getAttribute("aria-describedby")) {
+                            setTimeout(() => { mailRef.current!.click(); }, 2000);
+                        } copyToClipboard("eunv2004@gmail.com");
+                    }}><i ref={mailRef} className="bi bi-envelope contactIcon" data-bs-custom-class="green-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-trigger="focus click" data-bs-title="Email скопирован!"></i></div>
                 </div>
             </div>
         </div>
@@ -47,7 +81,7 @@ function ReactComponent() {
                 </div>
                 <div className="col contactIcon">
                     <div className="imageContainer" style={{ height: "120px", width: "120px", backgroundImage: "url('')" }}>
-                        <img src="https://uploads-ssl.webflow.com/62038ffc9cd2db4558e3c7b7/6242ba88faee5ceb27b7d9bf_php.svg" style={{ width: "100%", height: "100%" }} />
+                        <img src="https://www.php.net/images/logos/php-logo-white.svg" style={{ width: "100%", height: "100%" }} />
                     </div>
                 </div>
                 <div className="col contactIcon">
@@ -57,7 +91,12 @@ function ReactComponent() {
                 </div>
                 <div className="col contactIcon">
                     <div className="imageContainer" style={{ height: "120px", width: "120px", backgroundImage: "url('')" }}>
-                        <img src="https://4ireacademy.com/wp-content/uploads/2021/08/javascript.svg" style={{ width: "100%", height: "100%" }} />
+                        <img src="https://codehelper.com/wp-content/uploads/2018/10/javascript-icon.svg" style={{ width: "100%", height: "100%" }} />
+                    </div>
+                </div>
+                <div className="col contactIcon">
+                    <div className="imageContainer" style={{ height: "120px", width: "120px", backgroundImage: "url('')" }}>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" style={{ width: "100%", height: "100%" }} />
                     </div>
                 </div>
                 <div className="col contactIcon">
@@ -84,7 +123,7 @@ function ReactComponent() {
             />
 
 
-            <Card theme="green" time={new Date("04 25 2022")} tag1=<div>PHP + Java</div> link="//github.com/AlexC-ux/EncryShare-Java" linkText="Открыть репозиторий" title="Мессенджер EncryShare" imageLink="./images/products/encryshare.png"
+            <Card theme="green" time={new Date("04 25 2022")} tag1=<div>Java + PHP</div> link="//github.com/AlexC-ux/EncryShare-Java" linkText="Открыть репозиторий" title="Мессенджер EncryShare" imageLink="./images/products/encryshare.png"
                 text=<div>Сайт, разработанный для образовательной организации "Московский колледж транспорта".
                     <br />Стэк: <code>Java</code>, <code>PHP</code>.
                     <br />Мобильное приложение написано на Java, из функционала: регистрация в приложении, шифрование сообщений, создание групповых чатов. API написан на PHP.</div>
@@ -97,7 +136,7 @@ function ReactComponent() {
             />
 
 
-
+            
         </div>
     </>
     );

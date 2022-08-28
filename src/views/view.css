@@ -5,6 +5,9 @@
     justify-content: center;
 }
 
+.green-tooltip {
+    --bs-tooltip-bg: var(--bs-success);
+}
 
 .arrowBottomPos {
     top: 68%;
@@ -13,6 +16,15 @@
     left: 73%;
     color: #000000;
     transition: 0.3s;
+}
+
+.imageContainer{
+    padding:30px;
+    transition:0.5s;
+}
+.imageContainer:hover {
+    padding: 0px;
+    transition: 0.5s;
 }
 
 .contactIcon > div:hover > .arrowBottomPos {
