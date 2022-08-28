@@ -36,9 +36,6 @@ function ReactComponent() {
             <div className="row g-0 justify-content-center" style={{ paddingTop: `${(document.documentElement.clientHeight / 100 * 60)}px`, bottom: "0px" }}>
                 <div className="col text-center fs-1">
                     <h1>Герасимов Александр Андреевич</h1>
-                    <div className="d-block btn btn-outline-secondary mx-auto mt-3" style={{ maxWidth: "200px" }}>
-                        123123
-                    </div>
                 </div>
             </div>
 
@@ -114,7 +111,7 @@ function ReactComponent() {
 
 
         <div className="container bg-dark text-light mt-5">
-            <h2 className="text-center border-bottom my-2 pb-2 mx-auto" style={{ maxWidth: "250px" }}>Проекты</h2>
+            <h2 className="text-center border-bottom my-2 mb-4 pb-2 mx-auto" style={{ maxWidth: "250px" }}>Проекты</h2>
 
             <Card theme="red" time={new Date("08 19 2022")} tag1=<div>TSX + Node.Js</div> tag2=<a href="https://web.archive.org/web/20220827154459/https://xn--80aerhcl3be.xn--p1ai/"><i className="bi bi-box-arrow-up-right mx-2"></i>WebArchive</a> link="//активмкт.рф" linkText="Открыть сайт" title="Сайт студентческого актива МКТ" imageLink="./images/products/activemkt.png"
                 text=<div>Сайт, разработанный как инициатива студенческого активма Московского колледжа транспорта.
@@ -124,7 +121,13 @@ function ReactComponent() {
 
 
             <Card theme="green" time={new Date("04 25 2022")} tag1=<div>Java + PHP</div> link="//github.com/AlexC-ux/EncryShare-Java" linkText="Открыть репозиторий" title="Мессенджер EncryShare" imageLink="./images/products/encryshare.png"
-                text=<div>Сайт, разработанный для образовательной организации "Московский колледж транспорта".
+                text=<div>Мессенджер в котором можно создавать групповые чатф. Сообщения шифруются и хранятся локально.
+                    <br />Стэк: <code>Java</code>, <code>PHP</code>.
+                    <br />Мобильное приложение написано на Java, из функционала: регистрация в приложении, шифрование сообщений, создание групповых чатов. API написан на PHP.</div>
+            />
+
+            <Card theme="yellow" time={new Date("03 20 2022")} tag1=<div>С# + PHP</div> link="//github.com/AlexC-ux/EncryShare" linkText="Открыть репозиторий" title="Десктоп приложение EncryShare" imageLink="./images/products/encryshare.png"
+                text=<div>Клиент-сервер на C# для передачи сообщений и файлов в зашифрованном виде, прямое подключение по IP.
                     <br />Стэк: <code>Java</code>, <code>PHP</code>.
                     <br />Мобильное приложение написано на Java, из функционала: регистрация в приложении, шифрование сообщений, создание групповых чатов. API написан на PHP.</div>
             />

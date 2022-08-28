@@ -1,6 +1,6 @@
 import React from 'react';
 import "./index.css"
-function ReactComponent(props: { theme: "blue"|"red"|"green" , time: Date, tag1?: JSX.Element, tag2?: JSX.Element, link: string, linkText: string, title: string, text: JSX.Element, imageLink:string }) {
+function ReactComponent(props: { theme: "blue"|"red"|"green"|"yellow" , time: Date, tag1?: JSX.Element, tag2?: JSX.Element, link: string, linkText: string, title: string, text: JSX.Element, imageLink:string }) {
 
 	return (
 		<article className={`postcard dark ${props.theme}`}>
