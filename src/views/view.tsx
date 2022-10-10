@@ -32,8 +32,8 @@ function ReactComponent() {
 
     return (<>
 
-        <div className="w-100 bg-dark titlecontainer text-light" style={{ height: `${document.documentElement.clientHeight}px` }}>
-                    <img src="https://i.ibb.co/82qQMdQ/Image.png" className="d-block mx-auto rounded border" style={{ height: "440px", width: "340px", marginTop:"30px" }} />
+        <div className="w-100 bg-dark titlecontainer text-light" style={{ height: `200px` }}>
+         
             <div className="row g-0 justify-content-center" style={{ paddingTop: `${(document.documentElement.clientHeight / 100 * 10)}px`, bottom: "0px" }}>
                 
                 <div className="col text-center fs-1">
