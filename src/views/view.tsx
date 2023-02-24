@@ -68,6 +68,11 @@ function ReactComponent() {
                     </div>
                 </div>
                 <div className="col contactIcon">
+                    <div className="imageContainer" style={{ height: "120px", width: "120px" }}>
+                        <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" style={{ width: "100%", height: "100%" }} />
+                    </div>
+                </div>
+                <div className="col contactIcon">
                     <div className="imageContainer" style={{ height: "120px", width: "120px", backgroundImage: "url('')" }}>
                         <img src="https://zevensource.com/resource/img/shared/logo/tools/cs.svg" style={{ width: "100%", height: "100%" }} />
                     </div>
