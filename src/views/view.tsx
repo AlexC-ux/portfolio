@@ -112,7 +112,7 @@ function ReactComponent() {
             }}>
             <h2 className="text-center border-bottom my-2 mb-4 pb-2 mx-auto" style={{ maxWidth: "250px" }}>Проекты</h2>
 
-            <Card theme="red" time={new Date("02 25 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Redis + Prisma.JS</div>} link="https://github.com/AlexC-ux/pay-to-play" linkText="Открыть github" title="Самописный форум" imageLink="./images/products/paytoplay.png"
+            <Card theme="green" time={new Date("02 25 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Redis + Prisma.JS</div>} link="https://github.com/AlexC-ux/pay-to-play" linkText="Открыть github" title="Самописный форум" imageLink="./images/products/paytoplay.png"
                 text={<div>Этот форум был разработан для демонстрации навыков использования различных библиотек и фреймворков
                     <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>, <code>HTML5</code>, <code>CSS</code>, <code>Next.js</code>, <code>Redis</code>, <code>Prisma.JS</code>.
                     <br />С нуля разработанный backend и frontend, личный кабинет, посты, комменты, лайки, аватарки и всё соответствующее.</div>}
