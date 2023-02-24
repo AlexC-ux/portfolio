@@ -114,13 +114,13 @@ function ReactComponent() {
 
             <Card theme="green" time={new Date("02 25 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Redis + Prisma.JS</div>} link="https://github.com/AlexC-ux/pay-to-play" linkText="Открыть github" title="Самописный форум" imageLink="./images/products/paytoplay.png"
                 text={<div>Этот форум был разработан для демонстрации навыков использования различных библиотек и фреймворков
-                    <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>, <code>HTML5</code>, <code>CSS</code>, <code>Next.js</code>, <code>Redis</code>, <code>Prisma.JS</code>.
+                    <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>, <code>Next.js</code>, <code>Redis</code>, <code>Prisma.JS</code>.
                     <br />С нуля разработанный backend и frontend, личный кабинет, посты, комменты, лайки, аватарки и всё соответствующее.</div>}
             />
 
             <Card theme="red" time={new Date("08 19 2022")} tag1={<div>TypeScript + Node.Js</div>} tag2={<a href="https://web.archive.org/web/20220827154459/https://xn--80aerhcl3be.xn--p1ai/"><i className="bi bi-box-arrow-up-right mx-2"></i>WebArchive</a>} link="//активмкт.рф" linkText="Открыть сайт" title="Сайт студентческого актива МКТ" imageLink="./images/products/activemkt.png"
                 text={<div>Сайт, разработанный как инициатива студенческого активма Московского колледжа транспорта.
-                    <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>, <code>HTML5</code>, <code>CSS</code>.
+                    <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>.
                     <br />С нуля разработанный backend и frontend, личный кабинет, квизы и конкурсы.</div>}
             />
 
