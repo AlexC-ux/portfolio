@@ -121,13 +121,13 @@ function ReactComponent() {
 
 
 
-            <Card theme="blue" time={new Date("02 25 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Redis + Prisma.JS</div>} link="https://github.com/AlexC-ux/pay-to-play" linkText="Открыть github" title="Самописный форум" imageLink="./images/products/paytoplay.png"
+            <Card theme="green" time={new Date("02 25 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Redis + Prisma.JS</div>} link="https://github.com/AlexC-ux/pay-to-play" linkText="Открыть github" title="Самописный форум" imageLink="./images/products/paytoplay.png"
                 text={<div>Этот форум был разработан для демонстрации навыков использования различных библиотек и фреймворков
                     <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>, <code>Next.js</code>, <code>Redis</code>, <code>Prisma.JS</code>.
                     <br />С нуля разработанный backend и frontend, личный кабинет, посты, комменты, лайки, аватарки и всё соответствующее.</div>}
             />
 
-            <Card theme="green" time={new Date("01 13 2023")} tag1={<div>React + TypeScript + Node.Js</div>} link="https://initiative-accelerator-front-alexc-ux.vercel.app/auth" linkText="Открыть сайт" title="Акселератор инициатив для МСОПР" imageLink="./images/products/initiative-accelerator.png"
+            <Card theme="blue" time={new Date("01 13 2023")} tag1={<div>React + TypeScript + Node.Js</div>} link="https://initiative-accelerator-front-alexc-ux.vercel.app/auth" linkText="Открыть сайт" title="Акселератор инициатив для МСОПР" imageLink="./images/products/initiative-accelerator.png"
                 text={<div>Акселератор инициатив - проект Московского педагогического колледжа, которым в данный момент пользуются более 500 пользователей.
                     <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>.
                     <br />Для проекта Московского педагогического колледжа (Московского студенческого отряда педагогического резерва) "Акселератор инициатив" был разработан <a href='https://github.com/AlexC-ux/initiative-accelerator-server' style={{ color: "#9090e2" }}>backend</a> и <a href='https://github.com/AlexC-ux/initiative-accelerator-front' style={{ color: "#9090e2" }}>frontend</a> с личным кабинетом, админской частью, пользовательской частью. Разделение администраторов по различным уровням. Администрация может создавать задания за которые студенты получают баллы и тратят их в специальном магазине баллов. Телеграм проекта доступен по <a href='https://t.me/mospedreserv'>ссылке</a>.</div>}
