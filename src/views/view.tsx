@@ -118,7 +118,7 @@ function ReactComponent() {
                     <br />С нуля разработанный backend и frontend, личный кабинет, посты, комменты, лайки, аватарки и всё соответствующее.</div>}
             />
 
-            <Card theme="red" time={new Date("08 19 2022")} tag1={<div>TypeScript + Node.Js</div>} tag2={<a href="https://web.archive.org/web/20220827154459/https://xn--80aerhcl3be.xn--p1ai/"><i className="bi bi-box-arrow-up-right mx-2"></i>WebArchive</a>} link="//активмкт.рф" linkText="Открыть сайт" title="Сайт студентческого актива МКТ" imageLink="./images/products/activemkt.png"
+            <Card theme="red" time={new Date("08 19 2022")} tag1={<div>TypeScript + Node.Js + React</div>} tag2={<a href="https://web.archive.org/web/20220827154459/https://xn--80aerhcl3be.xn--p1ai/"><i className="bi bi-box-arrow-up-right mx-2"></i>WebArchive</a>} link="//активмкт.рф" linkText="Открыть сайт" title="Сайт студентческого актива МКТ" imageLink="./images/products/activemkt.png"
                 text={<div>Сайт, разработанный как инициатива студенческого активма Московского колледжа транспорта.
                     <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>.
                     <br />С нуля разработанный backend и frontend, личный кабинет, квизы и конкурсы.</div>}
@@ -139,7 +139,7 @@ function ReactComponent() {
 
             <Card theme="blue" time={new Date("01 31 2022")} tag1={<div>PHP + CMS Joomla</div>} tag2={<a href="//web.archive.org/web/20220322150522/http://mkgt.ru/"><i className="bi bi-box-arrow-up-right mx-2"></i>WebArchive</a>} link="//mkgt.ru" linkText="Открыть сайт" title="Сайт Московского колледжа транспорта" imageLink="./images/products/mkgt.png"
                 text={<div>Сайт, разработанный для образовательной организации "Московский колледж транспорта".
-                    <br />Стэк: <code>JS</code>, <code>PHP</code>, <code>HTML5</code>, <code>CSS</code>.
+                    <br />Стэк: <code>JS</code>, <code>PHP</code>.
                     <br />Основная часть на базе CMS Joomla, доработанный функционал на php, внедрение и кастомизация шаблона под требования заказчика, вёрстка страниц, оптимизация до 85 баллов по GooglePageSpeed, оптимизация мобильной версии сайта.               </div>}
             />
 
