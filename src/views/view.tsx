@@ -112,10 +112,20 @@ function ReactComponent() {
             }}>
             <h2 className="text-center border-bottom my-2 mb-4 pb-2 mx-auto" style={{ maxWidth: "250px" }}>Проекты</h2>
 
-            <Card theme="green" time={new Date("02 25 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Redis + Prisma.JS</div>} link="https://github.com/AlexC-ux/pay-to-play" linkText="Открыть github" title="Самописный форум" imageLink="./images/products/paytoplay.png"
+
+
+            
+
+            <Card theme="blue" time={new Date("02 25 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Redis + Prisma.JS</div>} link="https://github.com/AlexC-ux/pay-to-play" linkText="Открыть github" title="Самописный форум" imageLink="./images/products/paytoplay.png"
                 text={<div>Этот форум был разработан для демонстрации навыков использования различных библиотек и фреймворков
                     <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>, <code>Next.js</code>, <code>Redis</code>, <code>Prisma.JS</code>.
                     <br />С нуля разработанный backend и frontend, личный кабинет, посты, комменты, лайки, аватарки и всё соответствующее.</div>}
+            />
+
+            <Card theme="green" time={new Date("01 13 2023")} tag1={<div>React + TypeScript + Node.Js</div>} link="https://initiative-accelerator-front-alexc-ux.vercel.app/auth" linkText="Открыть сайт" title="Акселератор инициатив для МСОПР" imageLink="./images/products/initiative-accelerator.png"
+                text={<div>Акселератор инициатив - проект Московского педагогического колледжа, которым в данный момент пользуются более 500 пользователей.
+                    <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>.
+                    <br />Для проекта Московского педагогического колледжа (Московского студенческого отряда педагогического резерва) "Акселератор инициатив" был разработан <a href='https://github.com/AlexC-ux/initiative-accelerator-server'>backend</a> и <a href='https://github.com/AlexC-ux/initiative-accelerator-front'>frontend</a> с личным кабинетом, админской частью, пользовательской частью. Разделение администраторов по различным уровням. Администрация может создавать задания за которые студенты получают баллы и тратят их в специальном магазине баллов. Телеграм проекта доступен по <a href='https://t.me/mospedreserv'>ссылке</a>.</div>}
             />
 
             <Card theme="red" time={new Date("08 19 2022")} tag1={<div>TypeScript + Node.Js + React</div>} tag2={<a href="https://web.archive.org/web/20220827154459/https://xn--80aerhcl3be.xn--p1ai/"><i className="bi bi-box-arrow-up-right mx-2"></i>WebArchive</a>} link="//активмкт.рф" linkText="Открыть сайт" title="Сайт студентческого актива МКТ" imageLink="./images/products/activemkt.png"
