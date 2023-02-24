@@ -124,7 +124,7 @@ function ReactComponent() {
             <Card theme="green" time={new Date("02 25 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Redis + Prisma.JS</div>} link="https://github.com/AlexC-ux/pay-to-play" linkText="Открыть github" title="Самописный форум" imageLink="./images/products/paytoplay.png"
                 text={<div>Этот форум был разработан для демонстрации навыков использования различных библиотек и фреймворков
                     <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>, <code>Next.js</code>, <code>Redis</code>, <code>Prisma.JS</code>.
-                    <br />С нуля разработанный backend и frontend, личный кабинет, посты, комменты, лайки, аватарки и всё соответствующее.</div>}
+                    <br />С нуля разработанный backend и frontend, 2 поддерживаемых языка: русский и английский, личный кабинет, посты, комменты, лайки, аватарки и всё соответствующее.</div>}
             />
 
             <Card theme="blue" time={new Date("01 13 2023")} tag1={<div>React + TypeScript + Node.Js</div>} link="https://initiative-accelerator-front-alexc-ux.vercel.app/auth" linkText="Открыть сайт" title="Акселератор инициатив для МСОПР" imageLink="./images/products/initiative-accelerator.png"
