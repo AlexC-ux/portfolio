@@ -122,7 +122,7 @@ function ReactComponent() {
                     <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>, <code>Next.js</code>, <code>Strapi</code>, <code>different APIs</code>.
                     <br />Сайт разработан с использованием Next.JS. К форме обратной связи подключен робот-звонилка, настроена отправка уведомлений с заявками и записями звонков в телеграмм.</div>}
             />
-            <Card theme="green" time={new Date("08 03 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Open Meteo API</div>} link="https://themed-weather.vercel.app/" linkText="Открыть сайт" title="Сайт погоды Themed WWWeather" imageLink="./images/products/themedwwweather.png"
+            <Card theme="green" time={new Date("04 08 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Open Meteo API</div>} link="https://themed-weather.vercel.app/" linkText="Открыть сайт" title="Сайт погоды Themed WWWeather" imageLink="./images/products/themedwwweather.png"
                 text={<div>На сайте можно посмотреть погоду и гибко настроить стиль страницы
                     <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>, <code>Next.js</code>, <code>Open Meteo API</code>.
                     <br />Сайт разработан с использованием Next.JS. Есть поиск города, возможность установки фонов различных объектов и, как главная составляющая, - погода.</div>}
