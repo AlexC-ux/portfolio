@@ -117,13 +117,18 @@ function ReactComponent() {
             <h2 className="text-center border-bottom my-2 mb-4 pb-2 mx-auto" style={{ maxWidth: "250px" }}>Проекты</h2>
 
 
-            <Card theme="yellow" time={new Date("05 24 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Strapi + Zvonok.com API + Telegram bot API</div>} link="https://moepravo.today/" linkText="Открыть сайт" title="Сайт юридической компании Мое Право" imageLink="./images/products/moepravo31.png"
+            <Card theme="red" time={new Date("05 10 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Strapi + Zvonok.com API + Telegram bot API</div>} link="https://moepravo.today/" linkText="Открыть сайт" title="Сайт юридической компании Мое Право" imageLink="./images/products/moepravo31.png"
                 text={<div>Этот форум был разработан для демонстрации навыков использования различных библиотек и фреймворков
                     <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>, <code>Next.js</code>, <code>Strapi</code>, <code>different APIs</code>.
                     <br />Сайт разработан с использованием Next.JS. К форме обратной связи подключен робот-звонилка, настроена отправка уведомлений с заявками и записями звонков в телеграм.</div>}
             />
+            <Card theme="green" time={new Date("03 08 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Open Meteo API</div>} link="https://themed-weather.vercel.app/" linkText="Открыть сайт" title="Сайт погоды Themed WWWeather" imageLink="./images/products/themedwwweather.png"
+                text={<div>На сайте можно посмотреть погоду и гибко настроить стиль страницы
+                    <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>, <code>Next.js</code>, <code>Open Meteo API</code>.
+                    <br />Сайт разработан с использованием Next.JS. Есть поиск города, возможность установки фонов различных объектов и, как главная составляющая, - погода.</div>}
+            />
 
-            <Card theme="green" time={new Date("02 25 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Redis + Prisma.JS</div>} link="https://github.com/AlexC-ux/pay-to-play" linkText="Открыть github" title="Самописный форум" imageLink="./images/products/paytoplay.png"
+            <Card theme="yellow" time={new Date("02 25 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Redis + Prisma.JS</div>} link="https://github.com/AlexC-ux/pay-to-play" linkText="Открыть github" title="Самописный форум" imageLink="./images/products/paytoplay.png"
                 text={<div>Этот форум был разработан для демонстрации навыков использования различных библиотек и фреймворков
                     <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>, <code>Next.js</code>, <code>Redis</code>, <code>Prisma.JS</code>.
                     <br />С нуля разработанный backend и frontend, 2 поддерживаемых языка: русский и английский, личный кабинет, посты, комменты, лайки, аватарки и всё соответствующее.</div>}
