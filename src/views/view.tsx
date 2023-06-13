@@ -118,9 +118,9 @@ function ReactComponent() {
 
 
             <Card theme="red" time={new Date("05 10 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Strapi + Zvonok.com API + Telegram bot API</div>} link="https://moepravo.today/" linkText="Открыть сайт" title="Сайт юридической компании Мое Право" imageLink="./images/products/moepravo31.png"
-                text={<div>Этот форум был разработан для демонстрации навыков использования различных библиотек и фреймворков
+                text={<div>Сайт разработан для юридической компании ООО Мое Право, г. Белгород.
                     <br />Стэк: <code>JS</code>, <code>React</code>, <code>Node.js</code>, <code>Typescript</code>, <code>Next.js</code>, <code>Strapi</code>, <code>different APIs</code>.
-                    <br />Сайт разработан с использованием Next.JS. К форме обратной связи подключен робот-звонилка, настроена отправка уведомлений с заявками и записями звонков в телеграм.</div>}
+                    <br />Сайт разработан с использованием Next.JS. К форме обратной связи подключен робот-звонилка, настроена отправка уведомлений с заявками и записями звонков в телеграмм.</div>}
             />
             <Card theme="green" time={new Date("08 03 2023")} tag1={<div>Next.js + React + TypeScript + Node.Js + Open Meteo API</div>} link="https://themed-weather.vercel.app/" linkText="Открыть сайт" title="Сайт погоды Themed WWWeather" imageLink="./images/products/themedwwweather.png"
                 text={<div>На сайте можно посмотреть погоду и гибко настроить стиль страницы
