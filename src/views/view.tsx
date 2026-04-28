@@ -175,7 +175,7 @@ function ReactComponent() {
             <div>
               Next.js приложения для быстрого и удобного планирования задач
               <br />
-              Стэк: <code>Next.JS, tailwind@4, Node.js, React, postcss</code>.
+              Стэк: <code>Next.JS, tailwind@4, Node.js, React</code>.
             </div>
           }
         />
