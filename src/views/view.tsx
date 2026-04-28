@@ -5,9 +5,6 @@ import Card from '../components/postCard';
 function ReactComponent() {
   document.body.classList.add('bg-dark');
 
-  let phoneRef = React.createRef<HTMLImageElement>();
-  let mailRef = React.createRef<HTMLImageElement>();
-
   const copyToClipboard = (str: string) => {
     if (navigator && navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(str);
     return Promise.reject('The Clipboard API is not available.');
@@ -37,55 +34,13 @@ function ReactComponent() {
           className="row  mt-2 g-0 justify-content-end text-light"
           style={{ paddingTop: `2%`, bottom: '0px', fontSize: '50px' }}
         >
-          <div className="col">
-            <div
-              onClick={event => {
-                if (!phoneRef.current!.getAttribute('aria-describedby')) {
-                  setTimeout(() => {
-                    phoneRef.current!.click();
-                  }, 2000);
-                }
-                copyToClipboard('+79955071469');
-              }}
-            >
-              <i
-                ref={phoneRef}
-                className="bi bi-phone contactIcon"
-                data-bs-custom-class="green-tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-placement="bottom"
-                data-bs-trigger="focus click"
-                data-bs-title="Номер телефона скопирован!"
-              ></i>
-            </div>
-          </div>
+          <div className="col"></div>
           <div className="col">
             <a href="https://github.com/AlexC-ux">
               <i className="bi bi-github text-light contactIcon"></i>
             </a>
           </div>
-          <div className="col">
-            <div
-              onClick={event => {
-                if (!mailRef.current!.getAttribute('aria-describedby')) {
-                  setTimeout(() => {
-                    mailRef.current!.click();
-                  }, 2000);
-                }
-                copyToClipboard('eunv2004@gmail.com');
-              }}
-            >
-              <i
-                ref={mailRef}
-                className="bi bi-envelope contactIcon"
-                data-bs-custom-class="green-tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-placement="bottom"
-                data-bs-trigger="focus click"
-                data-bs-title="Email скопирован!"
-              ></i>
-            </div>
-          </div>
+          <div className="col"></div>
         </div>
       </div>
 
@@ -101,25 +56,8 @@ function ReactComponent() {
         <div className="row justify-content-center g-2 my-2 py-2">
           <div className="col contactIcon">
             <div className="imageContainer" style={{ height: '120px', width: '120px' }}>
-              <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" style={{ width: '100%', height: '100%' }} />
-            </div>
-          </div>
-          <div className="col contactIcon">
-            <div className="imageContainer" style={{ height: '120px', width: '120px' }}>
-              <img src="https://svgshare.com/i/1A8j.svg" style={{ width: '100%', height: '100%' }} />
-            </div>
-          </div>
-          <div className="col contactIcon">
-            <div
-              className="imageContainer"
-              style={{
-                height: '120px',
-                width: '120px',
-                backgroundImage: "url('')",
-              }}
-            >
               <img
-                src="https://zevensource.com/resource/img/shared/logo/tools/cs.svg"
+                src="https://www.logo.wine/a/logo/React_(web_framework)/React_(web_framework)-Logo.wine.svg"
                 style={{ width: '100%', height: '100%' }}
               />
             </div>
@@ -133,10 +71,19 @@ function ReactComponent() {
                 backgroundImage: "url('')",
               }}
             >
-              <img
-                src="https://www.php.net/images/logos/php-logo-white.svg"
-                style={{ width: '100%', height: '100%' }}
-              />
+              <img src="https://www.svgrepo.com/show/447473/rest-api.svg" style={{ width: '100%', height: '100%' }} />
+            </div>
+          </div>
+          <div className="col contactIcon">
+            <div
+              className="imageContainer"
+              style={{
+                height: '120px',
+                width: '120px',
+                backgroundImage: "url('')",
+              }}
+            >
+              <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" style={{ width: '100%', height: '100%' }} />
             </div>
           </div>
           <div className="col contactIcon">
@@ -217,7 +164,21 @@ function ReactComponent() {
         <h2 className="text-center border-bottom my-2 mb-4 pb-2 mx-auto" style={{ maxWidth: '250px' }}>
           Проекты
         </h2>
-
+        <Card
+          theme="yellow"
+          time={new Date('28 04 2026')}
+          link="https://fastplancalendar.vercel.app/"
+          linkText="Открыть сайт"
+          title="Календарь для быстрого планирования"
+          imageLink="./images/products/fastplancalendar.png"
+          text={
+            <div>
+              Next.js приложения для быстрого и удобного планирования задач
+              <br />
+              Стэк: <code>Next.JS, tailwind@4, Node.js, React, postcss</code>.
+            </div>
+          }
+        />
         <Card
           theme="blue"
           time={new Date('06 09 2024')}
