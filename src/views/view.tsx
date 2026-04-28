@@ -166,7 +166,7 @@ function ReactComponent() {
         </h2>
         <Card
           theme="yellow"
-          time={new Date('28 04 2026')}
+          time={new Date('04 28 2026')}
           link="https://fastplancalendar.vercel.app/"
           linkText="Открыть сайт"
           title="Календарь для быстрого планирования"
