@@ -88,16 +88,180 @@ const projects = [
   },
 ];
 
-const skills = [
-  { name: "React", icon: "⚛️", level: "Expert" },
-  { name: "Next.js", icon: "▲", level: "Expert" },
-  { name: "TypeScript", icon: "📘", level: "Expert" },
-  { name: "Node.js", icon: "🟢", level: "Advanced" },
-  { name: "Tailwind CSS", icon: "🎨", level: "Expert" },
-  { name: "REST API", icon: "🔗", level: "Advanced" },
-  { name: "PostgreSQL", icon: "🐘", level: "Intermediate" },
-  { name: "Redis", icon: "🔴", level: "Intermediate" },
-];
+// 📚 Технический стек — структурированные данные для отображения с иконками devicon
+// Подключение иконок: добавьте в app/layout.tsx:
+// <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+const techStack = {
+  frameworks: [
+    {
+      name: "Next.js",
+      icon: "devicon-nextjs-plain",
+      level: "Expert",
+      description: "App Router, SSR, Server Actions",
+    },
+    {
+      name: "NestJS",
+      icon: "devicon-nestjs-plain",
+      level: "Advanced",
+      description: "Modules, DI, Microservices",
+    },
+    {
+      name: "React",
+      icon: "devicon-react-original",
+      level: "Expert",
+      description: "Hooks, Context, Concurrent Mode",
+    },
+    {
+      name: "Node.js",
+      icon: "devicon-nodejs-plain",
+      level: "Advanced",
+      description: "Event Loop, Streams, Clustering",
+    },
+    {
+      name: "Express",
+      icon: "devicon-express-original",
+      level: "Advanced",
+      description: "Middleware, Routing, REST API",
+    },
+  ],
+  libraries: {
+    react: [
+      {
+        name: "React Router",
+        icon: "devicon-react-router-plain",
+        level: "Advanced",
+      },
+      {
+        name: "React Hook Form",
+        icon: "devicon-reacthookform-plain",
+        level: "Advanced",
+      },
+      { name: "Zustand", icon: "devicon-zustand-plain", level: "Advanced" },
+      {
+        name: "TanStack Query",
+        icon: "devicon-reactquery-plain",
+        level: "Advanced",
+      },
+      {
+        name: "Framer Motion",
+        icon: "devicon-framer-plain",
+        level: "Intermediate",
+      },
+    ],
+    backend: [
+      { name: "Axios", icon: "devicon-axios-plain", level: "Expert" },
+      { name: "Zod", icon: "devicon-zod-plain", level: "Advanced" },
+      { name: "Prisma", icon: "devicon-prisma-plain", level: "Advanced" },
+      { name: "TypeORM", icon: "devicon-typeorm-plain", level: "Intermediate" },
+      { name: "JWT", icon: "devicon-jsonwebtokens-plain", level: "Advanced" },
+    ],
+    ui: [
+      {
+        name: "Tailwind CSS",
+        icon: "devicon-tailwindcss-plain",
+        level: "Expert",
+      },
+      { name: "shadcn/ui", icon: "devicon-shadcnui-plain", level: "Advanced" },
+      {
+        name: "Radix UI",
+        icon: "devicon-radixui-plain",
+        level: "Intermediate",
+      },
+    ],
+  },
+  databases: [
+    {
+      name: "PostgreSQL",
+      icon: "devicon-postgresql-plain",
+      level: "Intermediate",
+    },
+    { name: "MongoDB", icon: "devicon-mongodb-plain", level: "Intermediate" },
+    { name: "MySQL", icon: "devicon-mysql-plain", level: "Intermediate" },
+    {
+      name: "MSSQL",
+      icon: "devicon-microsoftsqlserver-plain",
+      level: "Beginner",
+    },
+    { name: "SQLite", icon: "devicon-sqlite-plain", level: "Intermediate" },
+    { name: "Redis", icon: "devicon-redis-plain", level: "Intermediate" },
+  ],
+  tools: [
+    { name: "TypeScript", icon: "devicon-typescript-plain", level: "Expert" },
+    { name: "Jest", icon: "devicon-jest-plain", level: "Advanced" },
+    { name: "ESLint", icon: "devicon-eslint-plain", level: "Expert" },
+    { name: "Docker", icon: "devicon-docker-plain", level: "Intermediate" },
+    { name: "Git", icon: "devicon-git-plain", level: "Expert" },
+    { name: "Vite", icon: "devicon-vitejs-plain", level: "Advanced" },
+  ],
+};
+
+// 🧩 Компонент для отображения категории технологий с иконками devicon
+function TechCategory({
+  title,
+  items,
+  showDescription = false,
+  className = "",
+}: {
+  title: string;
+  items: Array<{
+    name: string;
+    icon: string;
+    level: string;
+    description?: string;
+  }>;
+  showDescription?: boolean;
+  className?: string;
+}) {
+  return (
+    <div className={className}>
+      <h3 className="text-lg font-semibold text-zinc-200 mb-4 flex items-center gap-2">
+        <span>{title}</span>
+        <span className="text-xs font-normal text-zinc-500 bg-zinc-800 px-2 py-0.5 rounded">
+          {items.length}
+        </span>
+      </h3>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+        {items.map((item) => (
+          <div
+            key={item.name}
+            className="group relative bg-zinc-900/50 hover:bg-zinc-800/80 border border-zinc-800 hover:border-violet-500/50 rounded-xl p-4 text-center transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-violet-900/20"
+            title={item.description || `${item.name} — ${item.level}`}
+          >
+            {/* Иконка технологии */}
+            <i
+              className={`${item.icon} text-3xl md:text-4xl text-zinc-400 group-hover:text-violet-400 transition-colors`}
+            />
+            {/* Название */}
+            <p className="font-medium text-sm mt-2 text-zinc-200">
+              {item.name}
+            </p>
+            {/* Уровень владения */}
+            <p
+              className={`text-xs mt-1 ${
+                item.level === "Expert"
+                  ? "text-emerald-400"
+                  : item.level === "Advanced"
+                    ? "text-violet-400"
+                    : item.level === "Intermediate"
+                      ? "text-amber-400"
+                      : "text-zinc-500"
+              }`}
+            >
+              {item.level}
+            </p>
+            {/* Описание (показывается при наведении или если showDescription) */}
+            {showDescription && item.description && (
+              <p className="text-xs text-zinc-500 mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                {item.description}
+              </p>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function Portfolio() {
   return (
@@ -188,32 +352,62 @@ export default function Portfolio() {
         </div>
       </header>
 
-      {/* Skills Section */}
-      <section className="py-16 border-y border-zinc-800/50 bg-zinc-900/30">
-        <div className="max-w-6xl mx-auto px-6">
+      {/* Skills Section — Технический стек */}
+      <section
+        id="stack"
+        className="py-16 border-y border-zinc-800/50 bg-zinc-900/30"
+      >
+        <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-3">
               Технический стек
             </h2>
             <p className="text-zinc-400 max-w-2xl mx-auto">
               Инструменты, которые я использую для создания надёжных и
-              масштабируемых решений
+              масштабируемых решений.
+              <br className="hidden md:block" />
+              <span className="text-xs text-zinc-500">
+                💡 Подсказка: наведите на карточку для подробностей.
+              </span>
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
-            {skills.map((skill) => (
-              <div
-                key={skill.name}
-                className="group relative bg-zinc-900/50 hover:bg-zinc-800/80 border border-zinc-800 hover:border-zinc-700 rounded-xl p-4 text-center transition-all duration-200 hover:-translate-y-1"
-              >
-                <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">
-                  {skill.icon}
-                </div>
-                <p className="font-medium text-sm">{skill.name}</p>
-                <p className="text-xs text-zinc-500 mt-1">{skill.level}</p>
-              </div>
-            ))}
+
+          {/* Frameworks */}
+          <TechCategory
+            title="🔷 Фреймворки"
+            items={techStack.frameworks}
+            showDescription
+          />
+
+          {/* Libraries */}
+          <div className="space-y-8 mt-8">
+            <TechCategory
+              title="📦 Библиотеки — React Ecosystem"
+              items={techStack.libraries.react}
+            />
+            <TechCategory
+              title="🔧 Библиотеки — Backend & Utilities"
+              items={techStack.libraries.backend}
+            />
+            <TechCategory
+              title="🎨 Библиотеки — UI & Styling"
+              items={techStack.libraries.ui}
+            />
           </div>
+
+          {/* Databases */}
+          <TechCategory
+            title="🗄️ СУБД"
+            items={techStack.databases}
+            className="mt-8"
+          />
+
+          {/* Tools */}
+          <TechCategory
+            title="🛠️ Инструменты"
+            items={techStack.tools}
+            className="mt-8"
+          />
         </div>
       </section>
 
