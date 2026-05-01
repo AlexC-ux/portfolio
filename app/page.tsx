@@ -242,7 +242,7 @@ export default function Portfolio() {
                 <div className="md:w-2/5 relative overflow-hidden">
                   <div
                     style={{
-                      backgroundImage: `url(/pages${project.image})`,
+                      backgroundImage: `url(/portfolio${project.image})`,
                       backgroundSize: "cover",
                     }}
                     className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent z-10"
