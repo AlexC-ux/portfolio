@@ -347,7 +347,7 @@ export default function Portfolio() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:alex@example.com"
+              href="mailto:eunv2004@gmail.com"
               className="px-8 py-4 bg-gradient-to-r from-violet-600 to-emerald-600 hover:from-violet-500 hover:to-emerald-500 text-white font-semibold rounded-xl transition-all shadow-lg shadow-violet-900/30 hover:shadow-violet-900/50"
             >
               Написать мне
@@ -363,15 +363,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="py-8 border-t border-zinc-800 text-center text-zinc-500 text-sm">
-        <p>
-          © {new Date().getFullYear()} Александр Герасимов. Создано с
-          использованием <span className="text-violet-400">Next.js</span> и{" "}
-          <span className="text-emerald-400">Tailwind CSS 4</span>
-        </p>
-      </footer>
     </div>
   );
 }
